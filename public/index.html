@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
-  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-</head>
-<body>
-  <nav id="navbar">Nav Bar</nav>
-  <div id="map-and-sidebar">
-    <div id="map"></div>
-    <div id="sidebar">
-      <div id="brown-box">
-        <h2>Hotels</h2>
-        <select name="hotel" id="hotel">list of hotels</select>
-        <button class="buttons">X</button>
-        <h2>Restaurants</h2>
-        <select name="restaurant" id="restaurant">list of restaurants</select>
-        <button class="buttons">X</button>
-        <h2>Things To Do</h2>
-        <select name="things-to-do" id="things-to-do">list of things to do</select>
-        <button class="buttons">X</button>
-      </div>
-      <div id="itinerary">
-        <h1>Itinerary</h1>
-        <h2>My Hotel</h2>
-          <ul>
-            <li>xxxxxxxxxx</li><button class="buttons">X</button>
-          </ul>
-        <h2>My Restaurants</h2>
-          <ul>
-            <li>xxxxxxxxxx</li><button class="buttons">X</button>
-          </ul>
-        <h2>My Activities</h2>
-          <ul>
-            <li>xxxxxxxxxx</li><button class="buttons">X</button>
-          </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar">Nav Bar</nav>
+    <div id="map-and-sidebar">
+      <div id="map"></div>
+      <div id="sidebar">
+        <div id="brown-box">
+          <h2>Hotels</h2>
+          <select name="hotel" id="hotel">
+            <option value="">--Please choose an option--</option>
+          </select>
+          <button class="buttons">X</button>
+          <h2>Restaurants</h2>
+          <select name="restaurant" id="restaurant">
+            <option value="">--Please choose an option--</option>
+          </select>
+          <button class="buttons">X</button>
+          <h2>Things To Do</h2>
+          <select name="things-to-do" id="things-to-do">
+            <option value="">--Please choose an option--</option>
+          </select>
+          <button class="buttons">X</button>
+        </div>
+        <div id="itinerary">
+          <h1>Itinerary</h1>
+          <div id="itinerary-content">
+            <h2>My Hotel</h2>
+            <ul>
+              <li>xxxxxxxxxx</li>
+              <button class="buttons">X</button>
+            </ul>
+            <h2>My Restaurants</h2>
+            <ul>
+              <li>xxxxxxxxxx</li>
+              <button class="buttons">X</button>
+            </ul>
+            <h2>My Activities</h2>
+            <ul>
+              <li>xxxxxxxxxx</li>
+              <button class="buttons">X</button>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<script src="./bundle.js" defer></script>
+  </body>
+  <script src="./bundle.js" defer></script>
 </html>
