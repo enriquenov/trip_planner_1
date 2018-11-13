@@ -1,4 +1,5 @@
 const mapboxgl = require("mapbox-gl");
+const createMarker = require('./marker.js');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibmVpbHNjaGV1ZXJtYW5uIiwiYSI6ImNqb2c4bm9zNDBjbmczcWp0YzZ6ajM5cXQifQ.DYKi3OjESw9ntZSGTBwVvA';
 
@@ -9,4 +10,6 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-// module.exports = map;
+createMarker("http://i.imgur.com/WbMOfMl.png", [-74.009, 40.705]).addTo(map);
+createMarker("http://i.imgur.com/D9574Cu.png", [-74.015, 40.725]).addTo(map);
+createMarker("http://i.imgur.com/cqR6pUI.png", [-74.008, 40.685]).addTo(map);
